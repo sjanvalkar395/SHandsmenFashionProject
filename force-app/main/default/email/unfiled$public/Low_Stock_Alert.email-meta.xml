@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Handsmen_Threads</letterhead>
+    <name>Low Stock Alert</name>
+    <style>freeForm</style>
+    <subject>Low Stock Alert</subject>
+    <textOnly>Dear Inventory Manager,
+This is to inform you that the stock for the following product is running low:
+Product Name: {!Inventory__c.Product__c}
+Current Stock Quantity: {!Inventory__c.Stock_Quantity__c}
+Please take the necessary steps to restock this item immediately.
+Best Regards,
+Inventory Monitoring System</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
